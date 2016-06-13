@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/layoutSurface1"
+        android:layout_width="match_parent"
+        android:layout_height="212dp"
+        android:orientation="horizontal"
+        android:layout_margin="2dp"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:id="@+id/layoutSurface4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Modo Descarga"
+                android:id="@+id/button5"
+                android:onClick="llamada_Descarga"
+                android:textSize="32dp"
+                android:gravity="center_vertical" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Modo Tiempo Real"
+                android:id="@+id/button4"
+                android:onClick="llamada_tiempoReal"
+                android:textSize="32dp"
+                android:gravity="center_vertical" />
+
+
+
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_alignLeft="@+id/plot_tension"
+            android:layout_toStartOf="@+id/zoomControls"
+            android:layout_alignBottom="@+id/zoomControls"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="64dp"
+            android:layout_alignParentTop="true"
+            android:spinnerMode="dialog"
+            android:gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+<!-- From: file:/C:/src/BlueCircuitorTester/app/src/main/res/layout/configuracion_tester.xml -->

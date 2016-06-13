@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2015 AndroidPlot.com
+  ~
+  ~    Licensed under the apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:divider="?android:dividerHorizontal"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/StartButtonI" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:id="@+id/StopButtonI" />
+
+        <Button
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:id="@+id/StatusButtonI" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="unknown"
+            android:id="@+id/StatusTextI" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/signal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:weightSum="1">
+
+    <com.androidplot.xy.XYPlot
+        android:id="@+id/plot_intensidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:label="MEDIDA DE INTENSIDAD"
+        app:borderColor="#ff000000"
+        app:backgroundColor="#ab193d"
+        app:graphBackgroundColor="#ab193d"
+        app:gridBackgroundColor="#ffffffff"
+        app:gridPaddingLeft="20dp"
+        app:gridPaddingRight="20dp"
+        app:gridPaddingTop="20dp"
+        app:gridPaddingBottom="20dp"
+        app:labelTextSize="20sp"
+        app:rangeLabelTextSize="13sp"
+        app:domainLabelTextSize="13sp"
+        app:graphMarginTop="20dp"
+        app:graphMarginBottom="40dp"
+        app:graphMarginLeft="15dp"
+        app:graphMarginRight="20dp"
+        app:graphDomainLineColor="#000000"
+        app:graphDomainLineThickness="1dp"
+        app:graphRangeLineColor="#000000"
+        app:graphRangeLineThickness="1dp"
+        app:rangeTickLabelTextSize="15sp"
+        app:rangeOriginTickLabelTextSize="15sp"
+        app:domainTickLabelTextSize="15sp"
+        app:domainOriginTickLabelTextSize="15sp"
+        app:legendTextSize="15sp"
+        app:legendIconHeight="15dp"
+        app:legendIconWidth="15dp"
+        app:legendHeight="25dp"
+        app:legendAnchorPosition="right_bottom"/>
+
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/valorEficazText"
+            android:text="value"
+            android:layout_weight="0.5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+             />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/valorEficazLabel"
+            android:text="I rms"
+            android:layout_weight="0.5"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/valorEficazText"
+             />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+<!-- From: file:/C:/src/BlueCircuitorTester/app/src/main/res/layout/xy_plot_intensidad.xml -->

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="0.9.6"><source path="C:\src\BlueCircuitorTester\app\build\intermediates\exploded-aar\com.androidplot\androidplot-core\0.9.6\assets"/></dataSet><dataSet config="main"><source path="C:\src\BlueCircuitorTester\app\src\main\assets"><file name="about.html" path="C:\src\BlueCircuitorTester\app\src\main\assets\about.html"/></source></dataSet><dataSet config="debug"><source path="C:\src\BlueCircuitorTester\app\src\debug\assets"/></dataSet></merger>
